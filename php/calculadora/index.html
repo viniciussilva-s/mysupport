@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html language="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculadora em PHP</title>
+	</head>
+	<body>
+		<fieldset style="width: 30px; height: 250px;">
+			<legend>Aprenda Abestado</legend>
+			<form method="post" action="classes/calcular.php">
+				<label>			
+					Primeiro numero <input type="text" name="numero1">
+				</label>
+				<label>			
+					Segundo numero <input type="text"name="numero2">
+				</label>
+				<br><br>
+				Operacao : <br>
+				<input type="radio" name="opc" value="somar"/>
+				<label>
+					Adicionar 
+				</label>
+				<input type="radio" name="opc"value="subtrair"/>
+				<label>
+					Subtrair
+				</label>
+				<input type="radio" name="opc"value="multiplicar"/>
+				<label>
+					Multiplicar
+				</label>
+				<input type="radio" name="opc"value="dividir"/>
+				<label>
+					Dividir
+				</label>
+				
+				<input type="submit" value="calcular" style="margin-top:10px;">
+			</form>
+		</fieldset>		
+			
+	</body>
+	
+</html>

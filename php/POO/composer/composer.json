@@ -1,0 +1,17 @@
+{
+    "name": "codely/composer",
+    "description": "Aula de php 07",
+    "type": "project",
+    "authors": [
+        {
+            "name": "viniciussilva-s",
+            "email": "viniciussilva-s@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+
+    }
+}
+ 

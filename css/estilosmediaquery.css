@@ -1,0 +1,49 @@
+p{
+	font-size:20px;
+}
+
+.img-teste{
+	width:320px;
+	height:320px;
+	border:1px solid red;
+	margin:20px;
+
+}
+.item{
+	width:320px;
+	height:320px;
+	border:1px solid blue;
+	margin:20px;
+	overflow:auto;
+
+}
+@media (max-width:320px) {
+	.img-teste{
+    background-image:url("https://cdn.pixabay.com/photo/2016/09/02/22/45/vector-1640465__340.png");
+    }
+}
+@media (min-width:321px)  and (max-width:599px) {
+	.img-teste{
+    background-color:red;
+	}
+}
+@media (min-width:605px) and (max-width:765px) {
+	.img-teste{
+    background-color:blue;
+    }
+}
+@media (min-width:768px) and (max-width:1020px){
+	.img-teste{
+    background-color:yellow;
+    }
+}
+@media (min-width:1024px) and (max-width:1195px) {
+	.img-teste{
+    background-color:black;
+    }
+}
+@media (min-width:1200px){
+	.img-teste{
+    	background-color:#ff8000;
+    }
+}

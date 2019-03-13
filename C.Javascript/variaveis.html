@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link type="" href="">
+		<title>Apredendo Javascript</title>
+		<link rel="shortcut icon" href="https://static1.squarespace.com/static/53c6ab6ae4b04d74ae28fc4b/t/53d95f45e4b042be0d26c9d0/1406754677505/TCG+Favicon.png">
+		<script type="text/javascript">
+		
+		/* codiçoes 
+		
+			//alert('teste de inclusão de Javascript');
+			// string
+			//$texto ="Aula de Javascript"; 
+			//alert($texto);
+			// float
+			//var numfracionado = 10.7;
+			
+			// int
+			//var numeroint= -7;
+			
+			// boolean
+			//var teste =true; //true or false
+			/*document.write($texto);
+			console.log($texto);
+			*/
+		/*  Concatenação
+			var text01 ="Vinicius ";
+			var text02 ="Souza";
+			document.write(text01 + text02 );
+		*/
+		/*  Concatenação e soma 
+			var text03="Olá ";
+			var text04= prompt("Qual é o seu nome?");
+			var ano= prompt("Qual é seu ano de Nascimento?");
+			var idade = 2018 - ano;
+			document.write(text03 + text04);
+			document.write(", atualmente possui: ");
+			document.write(idade);
+		*/
+		/*  Array
+		var lista_frutas = Array();
+		lista_frutas[1]='banana';
+		lista_frutas[2]='maça';
+		lista_frutas[3]='morango';
+		lista_frutas[4]='uva';
+		
+		alert(lista_frutas[4]);
+		*/
+		/*  Array Multidimencionais
+		var lista_coisas = Array(); 
+			lista_coisas['frutas']= Array();
+			lista_coisas['pessoas']= Array();
+			
+			lista_coisas['frutas'][1]='Banana';
+			lista_coisas['frutas'][2]='Maça';
+			lista_coisas['frutas'][3]='Morango';
+			
+			document.write(lista_coisas['frutas'][3]);
+			lista_coisas['pessoas'][1]='José';
+			lista_coisas['pessoas'][2]='Maria';
+			lista_coisas['pessoas'][3]='Joana';
+			document.write(lista_coisas['pessoas'][3]);
+		*/
+		/*  TESTE Array	
+		var lista_coisas = Array(); 
+			lista_coisas['alimentos']= Array();
+			lista_coisas['pessoas']= Array();
+			
+			lista_coisas['alimentos']['frutas']=Array();
+			
+			lista_coisas['alimentos']['frutas'][1]='Maça';
+			lista_coisas['alimentos']['frutas'][2]='Morango';
+			lista_coisas['alimentos']['frutas'][3]='Abacate';
+					
+			document.write(lista_coisas['alimentos']['frutas'][1]);
+		*/	
+		/*  Comandos If / Else 
+			&& = E
+			|| = OU
+			!  = Não
+		
+			var nota = prompt("Digite  a  nota do aluno");
+			var media = 7;
+			var qfalta = prompt("Quantidade de faltas do aluno");
+			var falta = 10
+			if ((nota >= media) && (falta >= qfalta)){
+				document.write("Aluno Aprovado");				
+			}
+			else{
+				document.write("Aluno Reprovado");				
+			}		
+		*/
+		/*	Switch 
+			
+				var opcao=3;
+				switch(opcao){
+					case 1:
+						document.write("opção 1 foi selecionada")
+					break;
+					case 2:
+						document.write("opção 2 foi selecionada")
+					break;
+					default:
+						document.write("opção inválida");
+					
+				}
+		*/
+		/*  Operadores Aritméticos 
+			+ Adição
+			- Subtração
+			* Multiplicação
+			/ Divisão
+			% Módulo
+			++ Incremento pré/pós
+			-- Decremento pré/pós
+		
+			var num1=9;
+			var num2=2;
+			//é usado os parentes ()para js identificar que deve fazer primeiro a opeção
+			document.write("A soma entre " + num1 + " e " + num2 + " é " + num1*num2);
+		*/	
+		/*	Estrutura de repetição While 
+			var num1 = prompt("Digite um numero");
+			while (num1< 10){
+				num1++;
+				if (num1 ==5 ){
+					continue;
+				}
+			
+				document.write("Vinicius " + (num1)+"<br/>");
+			}
+		*/		
+		/*	Estrutura de repetição doWhile 	
+			var x=0;
+			do{
+				document.write(x+'<br/>');
+				x+=2;
+			}while(x<=10);
+		*/
+		/*	Estrutura de repetição FOR 
+		//for (variavel ; condicao;incremento ou decremento){}
+		for (var x=0;x<11;x++){
+			document.write(x+'<br/>');
+		}
+		*/	
+		/*	Estrutura Funções (Function)
+			function calculaAreaTerreno (largura, comprimento){
+				var area=largura*comprimento;
+				return area;
+			}
+			var x = prompt("Digite a largura");
+			var y = prompt("Digite o comprimento");
+			var res ;
+			res =  calculaAreaTerreno(x,y);
+			document.write(res); ou document.write(calculaAreaTerreno(x,y));
+		*/	
+		/*  Eventos mouse JS
+			Principais eventos:
+			
+			onclick - ao clicar;
+			ondblclick - ao doblo click;
+			onmousedown - soltando ou não o botão
+			onmouseover - ao passar o mouse;
+			onmouseout - ao tirar o mouse;
+			<div  onclick="alert('uma tecla foi pressionada')" type="text"/>
+			<div  ondblclick="alert('uma tecla foi pressionada')" type="text"/>
+			<div  onmousedown="alert('uma tecla foi pressionada')" type="text"/>
+			<div  onmouseover="alert('uma tecla foi pressionada')" type="text"/>
+			<div  onmouseout="alert('uma tecla foi pressionada')" type="text"/>
+			
+		*/
+		/* 	Eventos do mouse JS para alteração de cor
+				
+				function alteraCor1(){			
+				document.getElementById('box-teste').className="cor01";
+				}
+				function alteraCor2(){
+					document.getElementById('box-teste').className="cor02";
+				}
+				function alteraCor3(){
+					document.getElementById('box-teste').className="cor03";
+				}
+				function alteraCor4(){
+					document.getElementById('box-teste').className="cor04";
+				}
+			
+			
+				.cor01{
+					background-color:blue;
+				}
+				.cor02{
+					background-color:red;
+				}
+				.cor03{
+					background-color:#CCC;
+				}
+				.cor04{
+					background-color:yellow;
+				}
+			
+		*/	
+		/*  Eventos capturado pelo teclado   
+			 Principais eventos do teclado:
+			
+			onkeydown - Acionado ao clicar a tecla (Obs.: Sendo solta ou não );
+			onkeypress - Acionado semelhante ao anterior, porem nao entra tecla de comados como  alt,ctrl,esc,shift, etc;
+			onkeyup -  Acionada no momento em que a tecla é liberada;
+			
+			<input  onkeydown="alert('uma tecla foi pressionada')" type="text"/>
+			<input  onkeypress="alert('uma tecla foi pressionada')" type="text"/>
+			<input  onkeyup="alert('uma tecla foi pressionada')" type="text"/>
+		*/
+		/*  Eventos capturado pela janela    
+			principais capturado de janela 
+			onload :Acionado Quando o navegador finaliza o carregamento do script; 
+			onresize: Acionado quando a pag ou frame é redimensionado;
+		  
+			Obs.: onload é usado quando entra em um novo site e pede a o cadastramento 
+		   
+		*/   
+		/*  Eventos de formulários                  
+		   onfocus - acionado quando elemento recebe o foco do cursor 
+		   onblur - acionado quando ele pede o foco do elemento
+		   onchange - acionado quando o estado do elemento é modificado
+		*/	
+		/*  Eventos de formulários (exemplos)	
+			<input onfocus="alert('o elemento foi focado')" onblur="alert(o elemento perdeu o foco)"type="text">
+		   
+		   <select onchange="alert('opção alterada!')">
+			<option value="1">primeiro</option>
+			<option value="2">segundo</option>
+			</select>
+		*/
+		/*				*/	
+
+
+		
+		   
+		   
+		</script>   
+	</head>
+	<body>
+		
+		<input type="text">	
+		
+	</body>
+
+</html>

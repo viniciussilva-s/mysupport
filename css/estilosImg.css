@@ -1,0 +1,22 @@
+.uva{
+	border:1px solid black;
+	background-color: rgba(177, 255, 154, .6);
+	}
+.uva2{
+	width:200px;
+	height:200px;
+	margin-right:10px;
+}
+a{
+	margin-right:10px;
+}
+.nav .nav-pills .nav-fill a:hover a{
+	background-color:black !important;
+}
+.container li{
+	text-decoration:none !important;
+	}
+		
+li.dropdown-menu{
+	display: block !important;
+}

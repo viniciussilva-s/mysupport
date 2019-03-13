@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>AJAX com JS</title>
+		
+		<!-- bootstrap - link cdn -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<script type="text/javascript">
+		
+		var httpRequest;
+		
+		function fazerRequisicao(url , destino){
+			if (window.XMLHttpRequest){
+				httpRequest = new XMLHttpRequest();
+			}
+			else if (window.ActiveXObject){
+				try {
+					httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+				} catch (e){
+						try{
+						    httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+						}catch(e){
+								alert('Impossível instanciar o objeto XMLHttpRequest para este navegador/versão');
+							}
+					}
+				
+			
+			}
+		
+			if (!httpRequest){
+				alert('Erro ao tentar criar uma instância do objeto XMLHttpRequest');
+				return false;
+			}
+			httpRequest.onreadystatechange = situacaoRequisicao;
+			
+			httpRequest.open("GET",url,true);
+			httpRequest.send();
+		
+		}
+		
+		function situacaoRequisicao(){
+
+			if(httpRequest.readyState == 4){
+				var e = httpRequest.responseText;
+				alert(e);
+				
+			}
+			
+			
+			
+		}
+	
+	
+	
+	
+	
+	
+	
+	</script>
+	</head>
+
+	<body>
+
+		<!-- Static navbar -->
+	    <nav class="navbar navbar-default navbar-static-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	        	<h3>Requisições síncronas e assíncronas</h3>
+	        </div>
+	      </div>
+	    </nav>
+
+
+	    <div class="container">
+
+	    	<div class="row">
+	    		<div class="col-md-4 center"></div>
+	    		<div class="col-md-4 center">
+	    			<a class="btn btn-primary" onclick="fazerRequisicao('pagina1conteudo.html','div_conteudo')">Página 1</a>
+	    			<a class="btn btn-primary" onclick="fazerRequisicao('pagina_2_conteudo.html','div_conteudo')">Página 2</a>
+	    			<a class="btn btn-primary" onclick="fazerRequisicao('pagina_3_conteudo.html','div_conteudo')">Página 3</a>
+	    		</div>
+	    		<div class="col-md-4 center"></div>
+	    	</div>
+	    	
+	    	<br />
+	    	<div class="row">
+		    	<div class="col-md-1"></div>
+
+		    	<div id="div_conteudo" class="col-md-10">
+		    		
+		    		</div>	
+		    	</div>
+		    		
+				<div class="col-md-1"></div>
+			</div>
+
+		</div>	
+	</body>
+</html>

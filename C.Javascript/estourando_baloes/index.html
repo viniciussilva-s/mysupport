@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+		<link rel="shortcut icon" href="imagens/balao_azul_pequeno.png" />
+		<script language='Javascript'>
+			function inicia_jogo(){
+				var nivel_jogo = document.getElementById('nivel_jogo').value;
+				
+				window.location.href='jogo.html?'+nivel_jogo;
+				alert(nivel_jogo);
+			}
+		</script>
+		<style>
+			*{
+			margin:10px;
+			}
+						
+		</style>
+	</head>
+	<body>
+	
+		<div style="float:left;height:173px;width:140px; background:#FFF; border:1px solid #A2A2A2;">
+			<p>
+				<b>Nível: </b>
+				<select id="nivel_jogo">
+					<option value="1">Fácil</option>
+					<option value="2">Normal</option>
+					<option value="3">Difícil</option>
+				
+				</select>
+			</p>
+			<img style="margin:0px 10px;"src="imagens/iniciar.png" onclick="inicia_jogo()"/>
+			<div >
+			
+			
+			
+		</div>	
+		
+	</body>
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
